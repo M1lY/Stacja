@@ -1,0 +1,6 @@
+# Project exclude paths
+/target/
+pom.xml
+stacja.iml
+/.idea
+/out
