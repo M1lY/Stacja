@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#onPressEnter" prefHeight="575.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mily.stacja.SettingsController">
+   <children>
+      <VBox layoutX="43.0" layoutY="19.0" prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;">
+         <children>
+            <HBox layoutX="10.0" layoutY="10.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Łączna ilość samochodów które wjadą na stację (0-nieskończoność)" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfCars" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="18.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ilość stanowisk z dystrybutorami: " wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfM" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin></TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="18.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ilośc kas: " wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfK" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin></TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="18.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maksymalna liczba samochodów które mogą przebywać na stacji" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfN" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="18.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="120.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Czas uzupełniania zasobów (zamykania stacji)" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfTimeRefill" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ms" wrappingWidth="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="150.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Czas tankowania 1L paliwa" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="tfTimeFueling" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ms" wrappingWidth="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="178.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Czas spredzany przy kasie (placenie)" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="tfTimePaying" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ms" wrappingWidth="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="250.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rozmiar zbiorników paliwa na stacji" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="tfMaxPaliwa" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="L" wrappingWidth="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="213.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Czas trwania animacji" wrappingWidth="240.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="tfTimeAnim" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ms" wrappingWidth="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="250.0" prefWidth="200.0" style="-fx-alignment: center-right;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj po przecinku rodzaje paliw" wrappingWidth="125.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="tfRodzajePaliw" alignment="CENTER_RIGHT" minWidth="-Infinity" onKeyTyped="#validate" prefHeight="25.0" prefWidth="186.0">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#setSettings" text="Zastosuj ustawienia">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+            <AnchorPane>
+               <children>
+                  <Button layoutY="-1.0" mnemonicParsing="false" onAction="#saveToFileSettings" prefHeight="50.0" prefWidth="135.0" text="Zapisz ustawienia&#10;do pliku" textAlignment="CENTER" textOverrun="CLIP">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="176.0" layoutY="-1.0" mnemonicParsing="false" onAction="#loadFromFileSettings" prefHeight="50.0" prefWidth="135.0" text="Wczytaj ustawienia&#10;z pliku" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
